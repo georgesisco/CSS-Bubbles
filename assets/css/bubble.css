@@ -1,0 +1,274 @@
+.Page{
+	background: #333;
+}
+
+/* Bubble */
+.bubble{
+	position: relative;
+	display: inline-block;
+	}
+.bubble.up{
+	margin-top: 32px;
+	}
+.bubble.down{
+	margin-bottom: 32px;
+	}
+.bubble.left{
+	margin-left: 32px;
+	}
+.bubble.right{
+	margin-right: 32px;
+	}	
+.bubble:before,
+.bubble:after,
+	.bubble-mid:before,
+	.bubble-mid:after,
+	.bubble-corners-top:after,
+	.bubble-corners-bottom:after,
+	.arrow:before{
+		content: "";
+		position: absolute;
+		}
+.bubble:before,
+.bubble:after{
+	left: 25px;
+	right: 25px;
+	height: 25px;
+	background-color: #ffffff;
+}	
+.bubble:before {
+	top: 0px;
+	}
+.bubble:after {
+	bottom: 0px;
+	}
+	.bubble-mid {
+		position: relative;
+		background-color: #ffffff;
+		padding: 0px 25px;
+		clear:both;
+		overflow: hidden;
+	}
+	.innerBubble {
+		padding: 10px;
+	}
+	.bubble-mid:before,.bubble-mid:after {
+		width: 25px;
+		height: 100%;
+		background-color: #ffffff;
+		}
+	.bubble-mid:before {
+		left: 0px;
+		}
+	.bubble-mid:after {
+		right: 0px;
+		top: 0px;
+		}
+
+	.bubble-corners{
+		height: 25px;
+		background-position: 0px 0px;
+		}
+		.bubble-corners-top{
+			background-position: -25px -25px;
+			}
+		.bubble-corners-bottom{
+			background-position: -25px 0px;
+			}
+		.bubble-corners-top:after,.bubble-corners-bottom:after{
+			width: 25px;
+			height: 25px;
+			right: 0px;
+			}
+		.bubble-corners-top:after{
+			background-position: 0 -25px;
+			}
+		.bubble-corners-bottom:after{
+			background-position: 0 0;
+			}
+		.bubble-corners,.bubble-corners-top:after,.bubble-corners-bottom:after{
+			background-repeat: no-repeat;
+			background-image: url("../images/bubble/bubbleCorners.png");
+			}
+	.arrow {
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		}
+	.arrow:before {
+		width: 32px;
+		height: 32px;
+		background: #fff;
+		}
+
+	.up.romeo.out .arrow,
+	.down.romeo.out .arrow,
+	.left.top.out .arrow,
+	.left.bottom.out .arrow,
+	.up.lima.in .arrow,
+	.down.lima.in .arrow,
+	.left.top.in .arrow,
+	.left.bottom.in .arrow{
+		border-left: 32px solid transparent;
+		}
+	.up.lima.out .arrow,
+	.down.lima.out .arrow,
+	.right.top.out .arrow,
+	.right.bottom.out .arrow,
+	.up.romeo.in .arrow,
+	.down.romeo.in .arrow,
+	.right.top.in .arrow,
+	.right.bottom.in .arrow{
+		border-right: 32px solid transparent;
+		}
+	
+	.up.romeo.out .arrow,
+	.up.lima.out .arrow,
+	.left.bottom.out .arrow,
+	.right.bottom.out .arrow,
+	.up.romeo.in .arrow,
+	.up.lima.in .arrow,
+	.left.top.in .arrow,
+	.right.top.in .arrow{
+		border-bottom: 32px solid #fff;
+		}
+		
+	.down.romeo.out .arrow,
+	.down.lima.out .arrow,
+	.left.top.out .arrow,
+	.right.top.out .arrow,
+	.down.romeo.in .arrow,
+	.down.lima.in .arrow,
+	.left.bottom.in .arrow,
+	.right.bottom.in .arrow{
+		border-top: 32px solid #fff;
+	}	
+	
+	.up.romeo.out .arrow,
+	.up.lima.out .arrow,
+	.left.top.out .arrow:before,
+	.right.top.out .arrow:before,
+	.up.romeo.in .arrow,
+	.up.lima.in .arrow{
+		top: -32px;
+	}
+	
+	.up.romeo.out .arrow,
+	.up.romeo.out .arrow:before,
+	.down.romeo.out .arrow,
+	.down.romeo.out .arrow:before,
+	.right.top.out .arrow:before,
+	.right.bottom.out .arrow:before{
+		right: 0px;
+	}
+	
+	.up.romeo.out .arrow:before,
+	.up.lima.out .arrow:before,
+	.up.romeo.in .arrow:before,
+	.up.lima.in .arrow:before{
+		top: 32px;
+	}
+	.right.top.out .arrow,
+	.right.bottom.out .arrow,
+	.right.top.in .arrow,
+	.right.bottom.in .arrow{
+		right: -32px;
+	}
+	
+	.left.top.out .arrow,
+	.right.top.out .arrow,
+	.left.top.in .arrow,
+	.left.top.in .arrow:before,
+	.right.top.in .arrow,
+	.right.top.in .arrow:before{
+		top: 0px;
+	}
+	
+	.up.lima.out .arrow,
+	.up.lima.out .arrow:before,
+	.down.lima.out .arrow,
+	.down.lima.out .arrow:before,
+	.left.top.out .arrow:before,
+	.left.bottom.out .arrow:before,
+	.up.romeo.in .arrow:before,
+	.up.lima.in .arrow,
+	.down.romeo.in .arrow:before,
+	.down.lima.in .arrow,
+	.left.bottom.in .arrow:before,
+	.left.top.in .arrow:before{
+		left: 0px;
+		}
+		
+	.down.romeo.out .arrow,
+	.down.lima.out .arrow,
+	.left.bottom.out .arrow:before,
+	.right.bottom.out .arrow:before,
+	.down.romeo.in .arrow,
+	.down.lima.in .arrow{
+		bottom: -32px;
+		}
+		
+	.down.romeo.out .arrow:before,
+	.down.lima.out .arrow:before,
+	.down.romeo.in .arrow:before,
+	.down.lima.in .arrow:before{
+		bottom: 32px;
+		}
+	
+	.left.top.out .arrow,
+	.left.bottom.out .arrow,
+	.left.top.in .arrow,
+	.left.bottom.in .arrow{
+		left: -32px;
+		}
+
+	.left.bottom.out .arrow,
+	.right.bottom.out .arrow,
+	.left.bottom.in .arrow,
+	.left.bottom.in .arrow:before,
+	.right.bottom.in .arrow,
+	.right.bottom.in .arrow:before{
+		bottom: 0px;
+		}
+
+	.up.romeo.in .arrow,
+	.up.lima.in .arrow:before,
+	.down.romeo.in .arrow,
+	.down.lima.in .arrow:before,
+	.right.top.in .arrow:before,
+	.right.bottom.in .arrow:before{
+		right: 0px;
+		}
+
+
+	
+
+
+
+		
+/*Colors gray*/
+.gray.bubble:before,
+.gray.bubble:after,
+	.gray .bubble-mid,
+	.gray .bubble-mid:before,
+	.gray .bubble-mid:after,
+	.gray .arrow:before {
+		background-color: #E5E0DC;
+	}
+	.gray .bubble-corners,.gray .bubble-corners-top:after,.gray .bubble-corners-bottom:after{
+		background-image: url("../images/bubble/bubbleCornersGray.png");
+		}
+	.down.gray .arrow,
+	.left.top.out.gray .arrow,
+	.left.bottom.in.gray .arrow,
+	.right.top.out.gray .arrow,
+	.right.bottom.in.gray .arrow{
+		border-top-color: #E5E0DC!important;
+	}
+	.up.gray .arrow,
+	.left.top.in.gray .arrow,
+	.left.bottom.out.gray .arrow,
+	.right.top.in.gray .arrow,
+	.right.bottom.out.gray .arrow{
+		border-bottom-color: #E5E0DC!important;
+		}
