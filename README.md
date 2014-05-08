@@ -17,3 +17,8 @@ CSS Class usage:
 		  lima	romeo
 	Orientation of the arrow (does the straight part face in or out of the bubble?):
 		in out
+
+OR		
+	Which side should the arrow be on?:
+		up down left right
+	Arrow should be in the middle (not in the corner - you have to adjust how far off the corner you want it to be)
