@@ -129,7 +129,8 @@
 	.up.romeo.in .arrow,
 	.up.lima.in .arrow,
 	.left.top.in .arrow,
-	.right.top.in .arrow{
+	.right.top.in .arrow,
+	.up.mid .arrow{
 		border-bottom: 32px solid #fff;
 		}
 		
@@ -140,7 +141,8 @@
 	.down.romeo.in .arrow,
 	.down.lima.in .arrow,
 	.left.bottom.in .arrow,
-	.right.bottom.in .arrow{
+	.right.bottom.in .arrow,
+	.down.mid .arrow{
 		border-top: 32px solid #fff;
 	}	
 	
@@ -241,8 +243,43 @@
 		}
 
 
+	.mid .arrow:before{
+		width: 0px;
+		height: 0px;
+	}
 	
+	.up.mid .arrow,
+	.down.mid .arrow{
+		border-left: 16px solid transparent;
+		border-right: 16px solid transparent;
+	}
+	.left.mid .arrow,
+	.right.mid .arrow{
+		border-top: 16px solid transparent;
+		border-bottom: 16px solid transparent;
+	}
+	
+	.up.mid .arrow{
+		top: -32px;
+		left: 25px;
+	}
 
+	.down.mid .arrow{
+		bottom: -32px;
+		right: 25px;
+	}
+	
+	.left.mid .arrow{
+		border-right: 32px solid #fff;
+		left: -32px;
+		top: 25px;
+	}
+	
+	.right.mid .arrow{
+		border-left: 32px solid #fff;
+		right: -32px;
+		bottom: 25px;
+	}
 
 
 		
@@ -262,13 +299,21 @@
 	.left.top.out.gray .arrow,
 	.left.bottom.in.gray .arrow,
 	.right.top.out.gray .arrow,
-	.right.bottom.in.gray .arrow{
+	.right.bottom.in.gray .arrow,
+	.down.mid.gray .arrow{
 		border-top-color: #E5E0DC!important;
 	}
 	.up.gray .arrow,
 	.left.top.in.gray .arrow,
 	.left.bottom.out.gray .arrow,
 	.right.top.in.gray .arrow,
-	.right.bottom.out.gray .arrow{
+	.right.bottom.out.gray .arrow,
+	.up.mid.gray .arrow{
 		border-bottom-color: #E5E0DC!important;
 		}
+	.left.mid.gray .arrow{
+		border-right-color: #E5E0DC!important;
+	}
+	.right.mid.gray .arrow{
+		border-left-color: #E5E0DC!important;
+	}
